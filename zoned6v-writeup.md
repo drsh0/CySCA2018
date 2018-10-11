@@ -6,8 +6,8 @@ We were initially given the domain bob.cysca
 If we do host -t mx bob.cysca we see that it's DNS is managed by ns.bob.cysca and ns6.bob.cysca
 
 Attempting a zone transfer with *nslookup -type=axfr bob.cysca ns6.bob.cysca* gave us the output
-
-*bob.cysca
+___
+bob.cysca
     origin = ns.bob.cysca
     mail addr = admin.bob.cysca
     serial = 2018020402
@@ -57,8 +57,8 @@ bob.cysca
     refresh = 28800
     retry = 7200
     expire = 864000
-    minimum = 86400*
-    
+    minimum = 86400
+___
 From this we can see axfr6flag.bob.cysca has a service running on port 34532
 
 using openbsd-nc we can connect to it by executing
