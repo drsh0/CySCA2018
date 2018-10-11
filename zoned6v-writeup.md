@@ -3,7 +3,7 @@ Corporate Pentest 1 writeup *Zonedv6*
 ___
 We were initially given the domain bob.cysca
 
-If we do host -t mx bob.cysca we see that it's DNS is managed by ns.bob.cysca and ns6.bob.cysca
+If we do *host -t mx bob.cysca* we see that it's DNS is managed by ns.bob.cysca and ns6.bob.cysca
 
 Attempting a zone transfer with *nslookup -type=axfr bob.cysca ns6.bob.cysca* contained these two lines in the output
 ___
