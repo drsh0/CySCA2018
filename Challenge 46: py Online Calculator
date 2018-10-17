@@ -1,9 +1,0 @@
-looking at the code it seems that the program tests what is input against a list of some banned words (“exec”, “=”, etc) and then executes what is input and then returns it as a string. 
-
-To test this i ran open(“flag”, “r”) which showed that it was being executed due to the message provided
-
-I then ran __import__('os').listdir('.') to import the os module and list everything in the current directory
-
-after doing this i saw nothing_to_see_here as a file
-
-I then used open('nothing_to_see_here','r').read() which returned the flag
